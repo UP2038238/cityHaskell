@@ -1,3 +1,6 @@
+import Data.List
+import Text.Printf
+import Data.Maybe (isNothing, fromJust)
 
 data City = City{
       name  :: String,
@@ -22,11 +25,7 @@ testData =
     City "Vienna"      48  16    [1945, 1930, 1915, 1901],
     City "Warsaw"      52  21    [1790, 1783, 1776, 1768]
     ]
-
-import Data.List
-import Text.Printf
-import Data.Maybe (isNothing, fromJust)
-
+    
 --q1
 
 allNames :: [City] -> [String]
